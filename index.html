@@ -3,11 +3,495 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechPhilia 8 | The Ultimate Tech Fest</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 style="color: aquamarine;">THis is my first header</h1>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
-    <p style="color: brown;">This is paragraph</p>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="glitch-text" data-text="TECHPHILIA8">TECHPHILIA8</div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+        <div class="loading-text">Initializing System... <span class="loading-percent">0%</span></div>
+    </div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Header and Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <div class="glitch-logo" data-text="TECHPHILIA_8">Aman Verma</div>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="glitch-wrapper">
+                    <span class="glitch-text" data-text="TECHPHILIA 8">TECHPHILIA 8</span>
+                </span>
+            </h1>
+            <p class="hero-subtitle typing-text">The Ultimate Technical Festival</p>
+            <div class="hero-date">April 12-14, 2025</div>
+            <p class="hero-description">
+                Join us for the most anticipated tech event with futuristic workshops, competitions, and hands-on technology experiences.
+            </p>
+            <div class="hero-cta">
+                <a href="#events" class="btn btn-primary">
+                    <span class="btn-text">Explore Events</span>
+                    <span class="btn-glitch"></span>
+                </a>
+                <a href="#register" class="btn btn-secondary">
+                    <span class="btn-text">Register Now</span>
+                    <span class="btn-glitch"></span>
+                </a>
+            </div>
+            <div class="countdown-container">
+                <div class="countdown-title">Event Begins In</div>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="days">00</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="hours">00</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="minutes">00</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="seconds">00</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="circuit-lines"></div>
+            <div class="hologram"></div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch-text" data-text="FEATURED_EVENTS">FEATURED_EVENTS</span>
+            </h2>
+            <div class="section-subtitle">Choose your challenge from our exciting lineup</div>
+            
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-card-inner">
+                        <div class="event-card-front">
+                            <div class="event-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="event-title">CodeWars</h3>
+                            <div class="event-date">April 12, 2025</div>
+                        </div>
+                        <div class="event-card-back">
+                            <h3 class="event-title">CodeWars</h3>
+                            <p class="event-description">
+                                Battle it out in our flagship competitive programming contest, featuring advanced algorithms and real-world problems.
+                            </p>
+                            <div class="event-details">
+                                <div class="event-detail">
+                                    <i class="fas fa-calendar"></i> April 12, 2025
+                                </div>
+                                <div class="event-detail">
+                                    <i class="fas fa-clock"></i> 10:00 AM - 4:00 PM
+                                </div>
+                                <div class="event-detail">
+                                    <i class="fas fa-map-marker-alt"></i> Main Auditorium
+                                </div>
+                            </div>
+                            <a href="#register" class="btn btn-small">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-card-inner">
+                        <div class="event-card-front">
+                            <div class="event-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3 class="event-title">AI Summit</h3>
+                            <div class="event-date">April 13, 2025</div>
+                        </div>
+                        <div class="event-card-back">
+                            <h3 class="event-title">AI Summit</h3>
+                            <p class="event-description">
+                                Explore the cutting edge of artificial intelligence, machine learning, and neural networks with industry experts.
+                            </p>
+                            <div class="event-details">
+                                <div class="event-detail">
+                                    <i class="fas fa-calendar"></i> April 13, 2025
+                                </div>
+                                <div class="event-detail">
+                                    <i class="fas fa-clock"></i> 11:00 AM - 5:00 PM
+                                </div>
+                                <div class="event-detail">
+                                    <i class="fas fa-map-marker-alt"></i> Conference Room B
+                                </div>
+                            </div>
+                            <a href="#register" class="btn btn-small">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-card-inner">
+                        <div class="event-card-front">
+                            <div class="event-icon">
+                                <i class="fas fa-vr-cardboard"></i>
+                            </div>
+                            <h3 class="event-title">VR Showcase</h3>
+                            <div class="event-date">April 14, 2025</div>
+                        </div>
+                        <div class="event-card-back">
+                            <h3 class="event-title">VR Showcase</h3>
+                            <p class="event-description">
+                                Experience virtual reality like never before with demos of the latest VR technology and applications.
+                            </p>
+                            <div class="event-details">
+                                <div class="event-detail">
+                                    <i class="fas fa-calendar"></i> April 14, 2025
+                                </div>
+                                <div class="event-detail">
+                                    <i class="fas fa-clock"></i> 9:00 AM - 3:00 PM
+                                </div>
+                                <div class="event-detail">
+                                    <i class="fas fa-map-marker-alt"></i> Innovation Lab
+                                </div>
+                            </div>
+                            <a href="#register" class="btn btn-small">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-card-inner">
+                        <div class="event-card-front">
+                            <div class="event-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h3 class="event-title">HackX</h3>
+                            <div class="event-date">April 12-13, 2025</div>
+                        </div>
+                        <div class="event-card-back">
+                            <h3 class="event-title">HackX</h3>
+                            <p class="event-description">
+                                A 24-hour hackathon where teams compete to build innovative solutions to real-world challenges.
+                            </p>
+                            <div class="event-details">
+                                <div class="event-detail">
+                                    <i class="fas fa-calendar"></i> April 12-13, 2025
+                                </div>
+                                <div class="event-detail">
+                                    <i class="fas fa-clock"></i> 10:00 AM - 10:00 AM (24hrs)
+                                </div>
+                                <div class="event-detail">
+                                    <i class="fas fa-map-marker-alt"></i> Engineering Block
+                                </div>
+                            </div>
+                            <a href="#register" class="btn btn-small">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-container">
+                <a href="#all-events" class="btn btn-outline">
+                    <span class="btn-text">View All Events</span>
+                    <span class="btn-glitch"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch-text" data-text="PREVIOUS_EDITIONS">PREVIOUS_EDITIONS</span>
+            </h2>
+            <div class="section-subtitle">Glimpses from TechPhilia 7</div>
+            
+            <div class="gallery-container">
+                <div class="gallery-controls">
+                    <button class="gallery-prev" aria-label="Previous slide">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="gallery-next" aria-label="Next slide">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="gallery-track">
+                    <div class="gallery-slide">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/800x500" alt="TechPhilia 7 Hackathon">
+                            <div class="gallery-overlay">
+                                <div class="gallery-caption">Hackathon Winners - TechPhilia 7</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/800x500" alt="TechPhilia 7 Workshop">
+                            <div class="gallery-overlay">
+                                <div class="gallery-caption">AI Workshop - TechPhilia 7</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/800x500" alt="TechPhilia 7 Robotics">
+                            <div class="gallery-overlay">
+                                <div class="gallery-caption">Robotics Competition - TechPhilia 7</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/800x500" alt="TechPhilia 7 Opening">
+                            <div class="gallery-overlay">
+                                <div class="gallery-caption">Opening Ceremony - TechPhilia 7</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/800x500" alt="TechPhilia 7 Coding">
+                            <div class="gallery-overlay">
+                                <div class="gallery-caption">Coding Competition - TechPhilia 7</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">
+                        <span class="glitch-text" data-text="ABOUT_THE_DEVELOPER">ABOUT_THE_DEVELOPER</span>
+                    </h2>
+                    <div class="about-text">
+                        <p>
+                            Hello! I'm a passionate web developer and Computer Science student at the university. With a deep interest in creating immersive digital experiences, I've designed this website for TechPhilia 8.
+                        </p>
+                        <p>
+                            My goal was to create a futuristic interface that captures the essence of innovation and technology that TechPhilia represents. I specialize in front-end development with expertise in HTML, CSS, and JavaScript.
+                        </p>
+                        <p>
+                            This project has been an exciting journey in pushing the boundaries of web design while ensuring functionality and user experience remain top priorities.
+                        </p>
+                    </div>
+                    <div class="developer-stats">
+                        <div class="stat">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Web Projects</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Satisfied Clients</div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="developer-portrait">
+                        <img src="https://via.placeholder.com/400x400" alt="Developer Portrait">
+                        <div class="portrait-glitch"></div>
+                    </div>
+                    <div class="tech-badges">
+                        <div class="tech-badge">HTML5</div>
+                        <div class="tech-badge">CSS3</div>
+                        <div class="tech-badge">JavaScript</div>
+                        <div class="tech-badge">React</div>
+                        <div class="tech-badge">Node.js</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch-text" data-text="ESTABLISH_CONNECTION">ESTABLISH_CONNECTION</span>
+            </h2>
+            <div class="section-subtitle">Get in touch with our team</div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>University Campus, Tech Building, Room 101</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>techphilia8@university.edu</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+1 (123) 456-7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Office Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-glitch"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="glitch-logo" data-text="TECHPHILIA_8">TECHPHILIA_8</div>
+                </div>
+                <div class="footer-nav">
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer-social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer-social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 TechPhilia 8. All Rights Reserved.</p>
+                </div>
+                <div class="footer-tagline">
+                    <p>Where Innovation Meets Imagination</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
